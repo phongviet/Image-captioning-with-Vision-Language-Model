@@ -1,3 +1,4 @@
 /data/COCO
 /data/Images
 /data/captions.txt
+best_model.pth
