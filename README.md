@@ -4,7 +4,7 @@ An image captioning system that combines CLIP (Contrastive Language-Image Pre-tr
 
 Implementation based on the paper: [ClipCap: CLIP Prefix for Image Captioning](https://arxiv.org/abs/2104.08773).
 
-## 🏗️ Architecture
+## Architecture
 
 ### ClipCapModel
 - **Visual Encoder**: CLIP ViT-B/32 for extracting 512-dimensional image features
@@ -17,7 +17,7 @@ Implementation based on the paper: [ClipCap: CLIP Prefix for Image Captioning](h
 2. **Prefix Length**: 10 tokens used as visual context for text generation
 3. **Temperature Sampling**: Configurable generation with temperature control and beam search
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -31,7 +31,7 @@ pip install pycocotools
 pip install pycocoevalcap
 ```
 
-## 📊 Dataset Setup
+## Dataset Setup
 
 ### Flickr8k Dataset
 1. Download the Flickr8k dataset 
@@ -43,7 +43,7 @@ pip install pycocoevalcap
 2. Download annotations
 3. Place in `data/COCO/` structure as shown above
 
-## 🎯 Usage
+## Usage
 
 ### Training
 ```python
@@ -51,7 +51,7 @@ pip install pycocoevalcap
 jupyter notebook train.ipynb
 ```
 
-## 📈 Model Performance
+## Model Performance
 
 The model is evaluated using standard image captioning metrics:
 - **BLEU-1, BLEU-4**: N-gram overlap scores
