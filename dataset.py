@@ -45,7 +45,7 @@ class Flickr8kDataset(Dataset):
 
 
 class Flickr8kPreprocessor:
-    def __init__(self, data_dir, clip_model_name="openai/clip-vit-base-patch32"):
+    def __init__(self, data_dir, clip_model_name="openai/clip-vit-base-patch16"):
         self.data_dir = data_dir
         self.clip_model_name = clip_model_name
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
