@@ -101,8 +101,8 @@ class ImageCaptioningApp:
             self.root.update()
 
             # Load CLIP model
-            self.clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
-            self.processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+            self.clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch16")
+            self.processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch16")
             self.clip_model.to(self.device)
             self.clip_model.eval()
 
